@@ -3,11 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script defer src="main.js"></script>
+    <title>Spotify Widget</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 <body>
     <nav>
@@ -15,7 +12,7 @@
         <hr class="hr1">
         <div>
           <p class="home-p pages">
-            <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img"  class="Svg-sc-1bi12j5-0 gSLhUO home-active-icon" viewBox="0 0 24 24">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img" class="Svg-sc-1bi12j5-0 gSLhUO home-active-icon" viewBox="0 0 24 24">
               <path d="M21 22V7.174l-9.001-5.195L3 7.214V22h7v-7h4v7z"></path>
             </svg>
             Home
@@ -46,25 +43,25 @@
             <p>Darmaduman</p>
             <a>Duman</a>
           </div>
-      
+
           <div>
             <img src="https://s1.dmcdn.net/v/1lMiI1Vju2e6lOdea/x1080" alt="#">
             <p>Akıyor Zaman</p>
             <a>Seksendört</a>
           </div>
-      
+
           <div>
             <img src="https://productimages.hepsiburada.net/s/58/500/11321560236082.jpg" alt="#">
             <p>Karanlık</p>
             <a>Dolu Kadehi Ters Tut</a>
           </div>
-      
+
           <div>
             <img src="http://a10.gaanacdn.com/images/albums/39/1406839/crop_480x480_1406839.jpg" alt="#">
             <p>Şehr-i Hüzün</p>
             <a>Manga</a>
           </div>
-      
+
           <div>
             <img src="https://e.snmc.io/i/600/w/7260a264252c939c4c22625e80ef17ca/3597494" alt="#">
             <p>Gülümse</p>
@@ -85,10 +82,16 @@
             <div class="controls">
               <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 16 16" class="Svg-sc-1bi12j5-0 gSLhUO"><path d="M13 2.5L5 7.119V3H3v10h2V8.881l8 4.619z"></path></svg>
               <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 16 16" class="Svg-sc-1bi12j5-0 gSLhUO play-btn"><path d="M4.018 14L14.41 8 4.018 2z"></path></svg>
-              <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 16 16" class="Svg-sc-1bi12j5-0 gSLhUO"><path d="M11 3v4.119L3 2.5v11l8-4.619V13h2V3z" ></path></svg>
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 16 16" class="Svg-sc-1bi12j5-0 gSLhUO"><path d="M11 3v4.119L3 2.5v11l8-4.619V13h2V3z"></path></svg>
             </div>
           </div>
         </div>
       </nav>
+
+    <!-- jQuery must load and finish BEFORE jQuery UI, and both BEFORE main.js.
+         Putting them right before </body> (no `defer`) guarantees that order. -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

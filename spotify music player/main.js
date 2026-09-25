@@ -1,4 +1,3 @@
-$(function(){
-    var nav = document.querySelector("nav");
-    $(nav).draggable();
-})
+$(function () {
+    $("nav").draggable();
+});
